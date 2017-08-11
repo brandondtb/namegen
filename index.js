@@ -10,7 +10,7 @@ function getRandomIntInclusive(min, max) {
 const adjs = fs.readFileSync('./adjectives.txt').toString().split('\n');
 const animals = fs.readFileSync('./animals.txt').toString().split('\n');
 
-for (let i=0; i<20; i++) {
+for (let i=0; i<10; i++) {
 	const theAdjective = adjs[getRandomIntInclusive(0, adjs.length - 1)].trim().toLowerCase();
 	const theAnimal = animals[getRandomIntInclusive(0, animals.length - 1)].trim().toLowerCase();
 	console.log(theAdjective + " " + theAnimal);
